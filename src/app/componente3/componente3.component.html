@@ -1,0 +1,42 @@
+<h4 class="tit">Formulario de Solicitud de Adopción </h4>
+
+<form class="example-form" [formGroup]="adoptionForm">
+    <mat-form-field class="example-full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput formControlName="name" placeholder="Ingresa tu nombre">
+      <mat-error *ngIf="adoptionForm.get('name')?.invalid">El nombre es requerido</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Teléfono</mat-label>
+      <input matInput formControlName="phone" placeholder="Ingresa tu teléfono">
+      <mat-error *ngIf="adoptionForm.get('phone')?.invalid">El teléfono es requerido</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Correo Electrónico</mat-label>
+      <input matInput type="email" formControlName="email" placeholder="Ingresa tu correo">
+      <mat-error *ngIf="adoptionForm.get('email')?.hasError('email')">Ingresa un correo válido</mat-error>
+      <mat-error *ngIf="adoptionForm.get('email')?.hasError('required')">El correo es requerido</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Motivo para adoptar una mascota</mat-label>
+      <textarea matInput formControlName="reason" placeholder="Escribe tu motivo"></textarea>
+      <mat-error *ngIf="adoptionForm.get('reason')?.invalid">Este campo es requerido</mat-error>
+    </mat-form-field>
+  
+    <section>
+        <div class="example-label"></div>
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <div class="example-button-container">
+              <button mat-fab extended>
+                <mat-icon>favorite</mat-icon>
+                Enviar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+  </form>

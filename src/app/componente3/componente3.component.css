@@ -1,0 +1,26 @@
+.tit{
+    text-align: center;
+    color: rgb(113, 7, 211);
+    width: 97vw; 
+  }
+.example-form {
+    min-width: 100px;
+    max-width: 600px;
+    width: 40%;
+    margin: auto;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  .example-button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin-top: 10px;
+    background-color: blueviolet;
+  }

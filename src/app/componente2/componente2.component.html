@@ -1,0 +1,14 @@
+<h4 class="tit">Condiciones de adopción </h4>
+<div class="full-screen-container">
+    <mat-grid-list cols="4" rowHeight="200px">
+        <mat-grid-tile
+          *ngFor="let tile of tiles"
+          [colspan]="tile.cols"
+          [rowspan]="tile.rows"
+          [style.background]="tile.color">
+          <img *ngIf="tile.text === 'Two'" src="https://img.freepik.com/fotos-premium/beagle-somete-examen-general-salud-parte-doctora-ia-generativa_804788-218610.jpg?w=740">
+          <span *ngIf="tile.text !== 'Two'">{{tile.text}}</span>
+        </mat-grid-tile>
+      </mat-grid-list>
+      
+  </div>

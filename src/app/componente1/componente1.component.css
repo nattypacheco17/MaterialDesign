@@ -1,0 +1,23 @@
+.tit{
+  text-align: center;
+  color: rgb(113, 7, 211);
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px; 
+  min-width: 223vh;
+}
+.example-card {
+    max-width: 300px;
+    background-color: rgb(0, 0, 0);  
+    color: white;
+    flex: 1; 
+}
+
+.example-header-image {
+    background-image: url('https://www.scripps.org/sparkle-assets/variants/hi_res_dogs_cats_rabbits_pets_1200x750-e017741227f7382c3ba7aaeb27b28297_desktop_x++-1200x1200.jpg');
+    background-size: cover;
+  }
+  
